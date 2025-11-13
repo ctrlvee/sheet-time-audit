@@ -4,19 +4,10 @@
   <meta charset="UTF-8">
   <title>Support - Sheet Time & Audit</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1 {
-      color: #0F9D58;
-    }
-    a {
-      color: #0F9D58;
-    }
+    body { font-family: "Segoe UI", Arial, sans-serif; max-width: 850px; margin: 40px auto; line-height: 1.7; color: #333; }
+    h1, h2 { color: #0F9D58; }
+    a { color: #0F9D58; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .contact-box {
       background: #f9f9f9;
       border-left: 4px solid #0F9D58;
@@ -27,27 +18,35 @@
 </head>
 <body>
   <h1>Support</h1>
-  <p>Welcome to the support page for <strong>Sheet Time & Audit</strong>, a Google Workspace Add-on for tracking spreadsheet activity and auditing project contributions.</p>
+  <p>Welcome to the support page for <strong>Sheet Time & Audit</strong>.  
+  Here you’ll find instructions, troubleshooting steps, and how to contact the developer.</p>
 
   <div class="contact-box">
-    <h2>Need Help?</h2>
-    <p>If you experience issues or have suggestions, please open an issue on GitHub:</p>
-    <p><a href="https://github.com/ctrlvee/sheet-time-audit/issues" target="_blank">📄 Submit an issue on GitHub</a></p>
+    <h2>Contact the Developer</h2>
+    <p>For issues, feedback, or suggestions, please open a ticket on GitHub:</p>
+    <p><a href="https://github.com/ctrlvee/sheet-time-audit/issues" target="_blank">📄 Open a GitHub Issue</a></p>
   </div>
 
-  <h2>Common Questions</h2>
-  <p><strong>Q: How do I start time tracking?</strong><br>
-  A: Open your Google Sheet → Extensions → Sheet Time & Audit → “Start Tracker”.</p>
+  <h2>Getting Started</h2>
+  <ol>
+    <li>Install the add-on from the Google Workspace Marketplace.</li>
+    <li>Open Google Sheets → Extensions → <strong>Sheet Time & Audit</strong>.</li>
+    <li>Select <em>Start Tracker</em> to begin time tracking.</li>
+    <li>Use <em>Generate Audit Report</em> to view document activity and contributors.</li>
+  </ol>
 
-  <p><strong>Q: Where is my time data stored?</strong><br>
-  A: All time data is securely stored in your Google Account using the UserProperties service. No data leaves your account.</p>
+  <h2>Common Issues</h2>
+  <p><strong>Idle time not updating:</strong> Ensure your spreadsheet is active and that you have the proper permissions.</p>
+  <p><strong>Audit report shows limited contributors:</strong> The add-on uses the Google Drive API, which lists only saved revisions.</p>
 
-  <p><strong>Q: I found a bug. What should I do?</strong><br>
-  A: Please include steps to reproduce the issue in your GitHub report. Screenshots help!</p>
+  <h2>Feature Requests</h2>
+  <p>If you have ideas for improving Sheet Time & Audit, please open a GitHub issue labeled “Enhancement”.  
+  Feedback is appreciated and helps guide future development.</p>
 
-  <p>For general feedback or improvement ideas, feel free to start a discussion or contact via the GitHub repository.</p>
-
-  <hr>
   <p><a href="index.html">← Back to Home</a></p>
+
+  <footer style="margin-top:40px; font-size:0.9em; color:#777;">
+    © 2025 Sheet Time & Audit — All rights reserved.
+  </footer>
 </body>
 </html>
